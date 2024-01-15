@@ -21,22 +21,22 @@ const apiKey = "6b61357690344ec175b15613eb5e5d47";
         document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
 
         if(data.weather[0].main == "Clouds"){
-            weatherIcon.src = "/WeatherApp/clouds.png"
+            weatherIcon.src = "clouds.png"
         }
         else if(data.weather[0].main == "Rain"){
-             weatherIcon.src = "/WeatherApp/rain.png"
+             weatherIcon.src = "rain.png"
         }
         else if(data.weather[0].main == "Drizzle"){
-             weatherIcon.src = "/WeatherApp/drizzle.png"
+             weatherIcon.src = "drizzle.png"
         }
         else if(data.weather[0].main == "Mist"){
-             weatherIcon.src = "/WeatherApp/mist.png"
+             weatherIcon.src = "mist.png"
         }
         else if(data.weather[0].main == "Snow"){
-             weatherIcon.src = "/WeatherApp/snow.png"
+             weatherIcon.src = "snow.png"
         }
         else{
-            weatherIcon.src = "/WeatherApp/clear.png"
+            weatherIcon.src = "clear.png"
         }
 
         document.querySelector(".weather").style.display = "block"
